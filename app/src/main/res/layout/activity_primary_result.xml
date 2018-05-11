@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.poran.instanthscresult.PrimaryResult">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exam"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/ExamP_header"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        />
+
+    <Spinner
+        android:id="@+id/examP_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/ExamP_header"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinnershape"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/code"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_below="@+id/examP_spinner"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/code_header"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_code"
+        android:gravity="left"
+        android:textColor="@color/liteblueA400"
+        android:layout_below="@+id/code_header"
+        android:layout_marginRight="30dp"
+        android:onClick="getCode"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/get_code"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:hint="@string/edit_hint"
+        android:layout_below="@+id/get_code"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/set_code"
+        android:background="@drawable/buttonshape"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_below="@+id/set_code"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/rollP_header"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="left"
+        android:background="@drawable/buttonshape"
+        android:textColor="@color/black"
+        android:layout_below="@+id/rollP_header"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/set_Roll"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:hint="Enter Roll"
+        android:inputType="number"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+
+        android:gravity="center"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/white"
+        android:layout_below="@+id/set_Roll"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/sendP_message"
+        android:textSize="25sp"
+        android:onClick="getCode"
+        android:layout_marginTop="15dp"
+        />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendP_message"
+        android:id="@+id/post"
+        ></WebView>
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bannerPrimary"
+        android:layout_gravity="bottom|center_horizontal"
+        ads:adSize="SMART_BANNER"
+        android:layout_below="@+id/post"
+        ads:adUnitId="@string/testBanner_ads_unit_id"
+
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>

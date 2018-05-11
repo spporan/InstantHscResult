@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.poran.instanthscresult.Examinations">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/feature"
+            android:scaleType="center"
+            />
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_weight="1">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           >
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:text="@string/hsc"
+               android:textColor="@color/colorPrimary"
+               android:layout_weight="1"
+               android:id="@+id/hsc"
+               android:onClick="getExam"
+               android:textSize="30sp"
+               android:background="@drawable/style"
+               android:gravity="center"
+               />
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:text="@string/ssc"
+               android:textColor="@color/colorPrimary"
+               android:layout_weight="1"
+               android:id="@+id/ssc"
+               android:onClick="getExam"
+               android:background="@drawable/style"
+               android:textSize="30sp"
+               android:gravity="center"
+               />
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:text="@string/jsc"
+               android:layout_weight="1"
+               android:id="@+id/jsc"
+               android:onClick="getExam"
+               android:textColor="@color/colorPrimary"
+               android:textSize="30sp"
+               android:gravity="center"
+               android:background="@drawable/style"
+               />
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:text="@string/psc"
+               android:textColor="@color/colorPrimary"
+               android:layout_weight="1"
+               android:id="@+id/psc"
+               android:onClick="getExam"
+               android:textSize="30sp"
+               android:background="@drawable/style"
+               android:gravity="center"
+               />
+
+       </LinearLayout>
+       <com.google.android.gms.ads.AdView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/bannerExam"
+           android:layout_gravity="bottom|center_horizontal"
+           ads:adSize="SMART_BANNER"
+           ads:adUnitId="@string/testBanner_ads_unit_id"
+
+           >
+
+       </com.google.android.gms.ads.AdView>
+
+
+   </LinearLayout>
+
+
+
+</LinearLayout>

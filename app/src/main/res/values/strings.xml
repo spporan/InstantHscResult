@@ -1,6 +1,86 @@
 <resources>
-    <string name="app_name">HSC Quick Result 2017</string>
+    <string name="app_name">Get public result</string>
     <string name="interstitial">ca-app-pub-1820765674741508/1664490951</string>
     <string name="banner_ads_unit_id">ca-app-pub-1820765674741508/2034586272</string>
     <string name="interstitial_ads">ca-app-pub-1820765674741508/7801918270</string>
+    <string name="testBanner_ads_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="testInterstitial_ads">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="hsc">HSC</string>
+    <string name="ssc">SSC</string>
+    <string name="jsc">JSC</string>
+    <string name="psc">PSC</string>
+
+    <string name="exam">Examination</string>
+    <string name="year">Year</string>
+    <string name="board">Board</string>
+    <string name="roll">Roll No</string>
+    <string name="send">Send</string>
+
+
+    <string name="internet">Internet</string>
+    <string name="message">Message</string>
+    <string name="edit_hint">Enter Upazila Code</string>
+    x
+    <string name="roll_hint">Enter Roll No</string>
+    <string name="code">Thana/Upazila Code Number</string>
+    <string name="get_code">Click for Upazila Code..</string>
+
+    <string-array name="exam_array">
+        <item>Choose One</item>
+        <item>HSC</item>
+        <item>ALIM</item>
+        <item>SSC</item>
+        <item>Dakhil</item>
+        <item>JSC</item>
+        <item>JDC</item>
+
+    </string-array>
+    <string-array name="exam_array_remind">
+        <item>Choose One</item>
+        <item>HSC</item>
+        <item>ALIM</item>
+        <item>SSC</item>
+        <item>Dakhil</item>
+        <item>JSC</item>
+        <item>JDC</item>
+        <item>DPE</item>
+        <item>EBT</item>
+
+    </string-array>
+    <string-array name="year_array">
+        <item>Choose One</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+    </string-array>
+    <string-array name="board_array">
+        <item>Choose One</item>
+        <item>Dhaka</item>
+        <item>Barisal</item>
+        <item>Chittagong</item>
+        <item>Comilla</item>
+        <item>Dinajpur</item>
+        <item>Jessore </item>
+        <item>Rajshahi</item>
+        <item>Sylhet </item>
+        <item> Madrasah  </item>
+    </string-array>
+    <string-array name="board_array_remind">
+        <item>Choose One</item>
+        <item>Dhaka</item>
+        <item>Barisal</item>
+        <item>Chittagong</item>
+        <item>Comilla</item>
+        <item>Dinajpur</item>
+        <item>Jessore </item>
+        <item>Rajshahi</item>
+        <item>Sylhet </item>
+        <item> Madrasah  </item>
+    </string-array>
+
+
 </resources>

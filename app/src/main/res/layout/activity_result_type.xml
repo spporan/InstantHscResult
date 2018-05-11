@@ -1,37 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.poran.instanthscresult.ResultType">
-    <Button
-        android:id="@+id/offline"
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="150dp"
-        android:text="Get Result Via Message"
-        android:onClick="getResult"
-        android:textSize="25dp"
-        android:background="@drawable/buttonstyle"
-        android:textColor="#1a237e"
+        android:text="@string/exam"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/Exam_header"
+        android:textSize="30sp"
+        android:layout_marginTop="60dp"
+        />
+
+    <Spinner
+        android:id="@+id/exam_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Exam_header"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinnershape"
+
+
+        ></Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_below="@+id/exam_spinner"
+
+        android:layout_marginLeft="30dp"
+        android:id="@+id/year_header"
+        android:layout_marginRight="30dp"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        />
+    <Spinner
+        android:id="@+id/year_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/year_header"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinnershape"
+
+
+        ></Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/board"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_below="@+id/year_spinner"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/board_header"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        />
+    <Spinner
+        android:id="@+id/board_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/board_header"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/spinnershape"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_below="@+id/board_spinner"
+
+        android:layout_marginLeft="30dp"
+        android:id="@+id/roll_header"
+        android:textSize="30sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:layout_below="@+id/roll_header"
+        android:inputType="number"
+        android:hint="Enter Roll Number"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginRight="30dp"
+        android:id="@+id/roll_edit"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/online"
-        android:layout_below="@+id/offline"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="50dp"
-        android:text="Get Result Via Internet"
-        android:onClick="getResult"
-        android:textSize="25dp"
+        android:id="@+id/send_message"
+        android:layout_below="@+id/roll_edit"
+        android:layout_marginTop="15dp"
+        android:text="@string/send"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:onClick="send"
+       
         android:background="@drawable/buttonstyle"
-        android:textColor="#1a237e"
-        />
+
+        android:layout_alignRight="@+id/roll_edit"
+        android:layout_alignEnd="@+id/roll_edit"
+        android:layout_alignLeft="@+id/roll_edit"
+        android:layout_alignStart="@+id/roll_edit" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bannerResultType"
+        android:layout_gravity="bottom|center_horizontal"
+        ads:adSize="SMART_BANNER"
+        android:layout_below="@+id/send_message"
+        ads:adUnitId="@string/testBanner_ads_unit_id"
+
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+
+
 
 
 </RelativeLayout>

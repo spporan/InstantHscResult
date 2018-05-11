@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        />
+    <item
+        android:title="Get Auto Result"
+        android:id="@+id/remind"
+        android:icon="@drawable/calendar_clock"
+        />
+    <item
+        android:title="Show Reminder"
+        android:id="@+id/show"
+        android:icon="@drawable/showmessage"
+        >
+
+    </item>
+
+
+
+
+    <item android:title="Comunicate">
+        <menu>
+            <item   android:id="@+id/feedback"
+                android:title="FeedBack"
+                android:icon="@mipmap/ic_rate_review_black_24dp"
+                />
+            <item
+                android:id="@+id/share"
+                android:title="Share"
+                android:icon="@mipmap/ic_share_black_24dp"
+                />
+            <item
+                android:id="@+id/rateUs"
+                android:title="Rate Our Apps"
+                android:icon="@drawable/rate_us"
+
+                />
+
+            <item
+                android:id="@+id/exit"
+                android:title="Exit"
+                android:icon="@drawable/exit"
+                />
+        </menu>
+
+    </item>
+
+
+
+
+</menu>
